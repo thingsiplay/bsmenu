@@ -7,7 +7,7 @@ A simple menu system written in Bash. A number, as well if only one entry is lef
 
 ```
 bsmenu Entry1 "Entry Number 2"
-ls -Q | bsmenu - | xargs xdg-open 2> /dev/null
+ls -Q --indicator-style classify | bsmenu - | xargs xdg-open 2> /dev/null
 ```
 
 # Output from help:
