@@ -3,7 +3,14 @@ bash select menu - Create menu from arguments or stdin and output selection to s
 
 A simple menu system written in Bash. A number, as well as if only one entry is left, will select an entry. The selected entry is printed to stdout. Any other character is used to filter the list of available entries further down. Each argument to the program will be a menu entry. Alternatively use single dash `-` as option to read each line from stdin as a menu entry.
 
-Output from help:
+# Examples:
+
+```
+bsmenu Entry1 "Entry Number 2"
+ls | bsmenu - | xargs xdg-open
+```
+
+# Output from help:
 
 ```
 $ bsmenu --help
